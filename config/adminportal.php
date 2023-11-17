@@ -42,8 +42,8 @@ return [
         'view_path' => 'portalmodule::auth.login',
         'banner' => 'adminportal/img/login-banner.svg',
         'banner_title' => 'Welcome Back !',
-        'banner_description' => "Use your access in the ".config('app.name')." application and login to your dashboard account.",
-        
+        'banner_description' => "Use your access in the " . config('app.name') . " application and login to your dashboard account.",
+
         'limiter' => ['throttle:60perMinute'],
         'url' => 'admin/auth/login',
         'forgot_password_url' => 'admin/auth/forgot-password',
@@ -55,7 +55,7 @@ return [
      | For the sidebar admin color
      | --------------------------------------------
      */
-    'theme_color' => '#0A0A0A',
+    'theme_color' => '#0575E6',
 
     /*
      | --------------------------------------------
@@ -94,7 +94,7 @@ return [
      | --------------------------------------------
      */
     'alert_message_type' => 'popup',
-    
+
 
 
     /*
@@ -109,5 +109,5 @@ return [
         'expired_duration_get_token' => "+1 hours",
         'validate_blacklist' => false
     ]
-    
+
 ];

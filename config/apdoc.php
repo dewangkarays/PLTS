@@ -29,7 +29,7 @@ return [
             'description' => 'DEV',
         ],
         [
-            'url' => 'http://plts.crossx.id',
+            'url' => 'https://plts.crossx.id',
             'description' => 'LIVE',
         ],
     ],

@@ -5,9 +5,9 @@ return [
     'info' => [
         'title' => env('APP_NAME'),
         'version' => 'v0.0.1',
-        'description' => env('APP_NAME')." API Documentation page",
+        'description' => env('APP_NAME') . " API Documentation page",
     ],
- 
+
     'path' => 'api-documentation',
 
     'enable_documentation' => env('APP_DEBUG'),
@@ -29,7 +29,7 @@ return [
             'description' => 'DEV',
         ],
         [
-            'url' => 'http://test.example.com',
+            'url' => 'http://plts.crossx.id',
             'description' => 'LIVE',
         ],
     ],
@@ -42,8 +42,8 @@ return [
         ],
     ],
 
-    
-    'api' =>[
+
+    'api' => [
         'path' => 'api/',
         'exclude' => [
             // 'api/index','api/store/{id}'
@@ -51,7 +51,7 @@ return [
 
         // 'overview_information_view' => 'api-doc/overview',
 
-        
+
         // 'response_code' => [
         //     "200" => "OKE",
         //     "401" => "Unauthorized",
@@ -73,9 +73,9 @@ return [
      */
     'default_parameter' => [
         'headers' =>  [
-            'platform' => ['string',true],
-            'regid' => ['string',true],
-        ]  
+            'platform' => ['string', true],
+            'regid' => ['string', true],
+        ]
     ]
 
 ];

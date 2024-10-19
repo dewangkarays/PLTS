@@ -9,7 +9,7 @@ use Laililmahfud\Adminportal\Traits\HasUuid;
 class SensorsParameters extends Model
 {
     use HasFactory, HasUuid;
-    protected $fillable = ['sensors_id', 'name', 'unit'];
+    protected $fillable = ['sensors_id', 'name', 'unit', 'parameter'];
     protected $appends = ['last_value'];
 
     public function sensor()

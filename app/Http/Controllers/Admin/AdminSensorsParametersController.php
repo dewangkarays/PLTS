@@ -16,7 +16,9 @@ class AdminSensorsParametersController extends AdminController
     protected $bulkAction = false;
 
     protected $tableColumns = [
-        ["label" => "Sensor", "name" => "sensors_id"], ["label" => "Name", "name" => "name"],
+        ["label" => "Sensor", "name" => "sensors_id"],
+        ["label" => "Parameter", "name" => "parameter"],
+        ["label" => "Name", "name" => "name"],
         ["label" => "Unit", "name" => "unit"],
     ];
 

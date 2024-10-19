@@ -21,4 +21,4 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::middleware('auth:api')->post('sensors-parameters', [ParameterLogController::class, 'store']);
+Route::middleware('api.auth')->post('sensors-parameters', [ParameterLogController::class, 'store']);

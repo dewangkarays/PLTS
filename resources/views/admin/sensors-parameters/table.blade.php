@@ -1,6 +1,7 @@
 @foreach ($data as $row)
     <tr>
         <td>{{ $row->sensor->name }}</td>
+        <td>{{ $row->parameter }}</td>
         <td>{{ $row->name }}</td>
         <td>{{ $row->unit }}</td>
         <td class="text-end">

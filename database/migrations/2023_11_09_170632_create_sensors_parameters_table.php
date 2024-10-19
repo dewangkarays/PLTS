@@ -18,6 +18,7 @@ return new class extends Migration
             $table->uuid();
             $table->integer('sensors_id');
             $table->string('name');
+            $table->string('parameter');
             $table->string('unit')->nullable();
             $table->timestamps();
             $table->softDeletes();

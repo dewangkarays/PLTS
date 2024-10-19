@@ -10,8 +10,7 @@ class SensorsParametersService extends AdminService
 {
     public function __construct(
         public $model = SensorsParameters::class,
-    ) {
-    }
+    ) {}
 
     public function datatable(Request $request, $perPage = 10)
     {
@@ -30,6 +29,7 @@ class SensorsParametersService extends AdminService
     {
         return $this->model::create([
             "sensors_id" => $request->sensors_id,
+            "parameter" => $request->parameter,
             "name" => $request->name,
             "unit" => $request->unit,
         ]);
@@ -37,7 +37,7 @@ class SensorsParametersService extends AdminService
 
     public function update(Request $request, $uuid)
     {
-        $data =  $request->only(['sensors_id', 'name', 'unit']);
+        $data =  $request->only(['sensors_id', 'name', 'unit', 'parameter']);
 
         return $this->model::whereUuid($uuid)->update($data);
     }
